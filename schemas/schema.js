@@ -29,6 +29,8 @@ import imageSection from './objects/imageSection';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
 
+import footer from './documents/footer';
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -56,6 +58,7 @@ export default createSchema({
     portableText,
     route,
     simplePortableText,
+    footer,
     // siteConfig,
     textSection,
   ]),

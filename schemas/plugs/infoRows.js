@@ -1,7 +1,7 @@
 export default {
   type: 'object',
-  name: 'textSection',
-  title: 'Text',
+  name: 'infoRows',
+  title: 'Info rows',
   fields: [
     {
       name: 'label',
@@ -13,6 +13,11 @@ export default {
       type: 'string',
       title: 'Heading',
     },
+    {
+      name: 'text',
+      type: 'portableText',
+      title: 'Text',
+    },
   ],
   preview: {
     select: {
@@ -21,6 +26,7 @@ export default {
     prepare({ heading }) {
       return {
         title: `${heading}`,
+        subtitle: 'Text section',
       };
     },
   },
