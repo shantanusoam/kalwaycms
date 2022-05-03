@@ -27,6 +27,9 @@ export default {
         { type: 'mailchimp' },
         { type: 'textSection' },
         { type: 'infoRows' },
+        { type: 'imageSectionSlider' },
+        { type: 'imageRow' },
+        { type: 'banner' },
       ],
     },
     {

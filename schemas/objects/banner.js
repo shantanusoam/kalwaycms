@@ -1,22 +1,23 @@
 export default {
   type: 'object',
-  name: 'infoRows',
-  title: 'Info rows',
+  name: 'banner',
+  title: 'Banner With Link',
   fields: [
-    {
-      name: 'label',
-      type: 'string',
-      title: 'Label',
-    },
     {
       name: 'heading',
       type: 'string',
       title: 'Heading',
     },
     {
-      name: 'text',
-      type: 'portableText',
-      title: 'Text',
+      name: 'ctas',
+      type: 'array',
+      title: 'Call to actions',
+      of: [
+        {
+          title: 'Call to action',
+          type: 'cta',
+        },
+      ],
     },
   ],
   preview: {
@@ -26,7 +27,6 @@ export default {
     prepare({ heading }) {
       return {
         title: `${heading}`,
-        subtitle: 'Text section',
       };
     },
   },

@@ -26,9 +26,12 @@ import simplePortableText from './objects/simplePortableText';
 // Landing page sections
 import hero from './objects/hero';
 import imageSection from './objects/imageSection';
+import imageSectionSlider from './objects/imageSectionSlider';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
-
+import infoRows from './objects/infoRows';
+import banner from './objects/banner';
+import imageRow from './objects/imageRow';
 import footer from './documents/footer';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -59,7 +62,11 @@ export default createSchema({
     route,
     simplePortableText,
     footer,
+    infoRows,
     // siteConfig,
     textSection,
+    imageSectionSlider,
+    imageRow,
+    banner,
   ]),
 });
