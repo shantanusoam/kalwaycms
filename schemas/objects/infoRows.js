@@ -8,9 +8,18 @@ export default {
       name: 'title',
     },
     {
+      type: 'string',
+      name: 'label',
+    },
+    {
       type: 'array',
       name: 'rows',
       of: [{ type: 'imageSection' }],
+    },
+    {
+      name: 'cta',
+      type: 'cta',
+      title: 'Call to action',
     },
   ],
 };
