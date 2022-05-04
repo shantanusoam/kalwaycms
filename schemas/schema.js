@@ -30,10 +30,11 @@ import imageSectionSlider from './objects/imageSectionSlider';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
 import infoRows from './objects/infoRows';
+import videoPlug from './plugs/videoPlug';
 import banner from './objects/banner';
 import imageRow from './objects/imageRow';
 import footer from './documents/footer';
-
+import youtube from './objects/youtube';
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -68,5 +69,7 @@ export default createSchema({
     imageSectionSlider,
     imageRow,
     banner,
+    youtube,
+    videoPlug,
   ]),
 });

@@ -21,5 +21,10 @@ export default {
       type: 'cta',
       title: 'Call to action',
     },
+    {
+      name: 'image',
+      type: 'figure',
+      title: 'Image',
+    },
   ],
 };

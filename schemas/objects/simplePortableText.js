@@ -29,6 +29,9 @@ export default {
       type: 'embedHTML',
     },
     {
+      type: 'youtube',
+    },
+    {
       type: 'image',
       options: { hotspot: true },
     },

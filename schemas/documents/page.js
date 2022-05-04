@@ -30,6 +30,7 @@ export default {
         { type: 'imageSectionSlider' },
         { type: 'imageRow' },
         { type: 'banner' },
+        { type: 'videoPlug' },
       ],
     },
     {
