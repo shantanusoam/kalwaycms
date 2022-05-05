@@ -28,6 +28,13 @@ export default {
       type: 'cta',
       title: 'Call to action',
     },
+    {
+      name: 'content',
+      type: 'array',
+      title: 'listeitems Container',
+      description: 'Adding list items',
+      of: [{ type: 'listeitems' }],
+    },
   ],
   preview: {
     select: {

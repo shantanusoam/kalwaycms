@@ -33,6 +33,7 @@ import infoRows from './objects/infoRows';
 import videoPlug from './plugs/videoPlug';
 import banner from './objects/banner';
 import imageRow from './objects/imageRow';
+import listeitems from './objects/listeitems';
 import footer from './documents/footer';
 import youtube from './objects/youtube';
 // Then we give our schema to the builder and provide the result to Sanity
@@ -71,5 +72,6 @@ export default createSchema({
     banner,
     youtube,
     videoPlug,
+    listeitems,
   ]),
 });

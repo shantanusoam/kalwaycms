@@ -17,6 +17,12 @@ export default {
       type: 'string',
       title: 'Title',
     },
+
+    {
+      name: 'label',
+      type: 'string',
+      title: 'Label',
+    },
     {
       name: 'content',
       type: 'array',
@@ -31,6 +37,7 @@ export default {
         { type: 'imageRow' },
         { type: 'banner' },
         { type: 'videoPlug' },
+        { type: 'listeitems' },
       ],
     },
     {
