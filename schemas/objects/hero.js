@@ -24,18 +24,18 @@ export default {
     {
       name: 'ctas',
       type: 'array',
-      title: 'Call to actions or Slider Image',
+      title: 'Call to actions',
       of: [
         {
           title: 'Call to action',
           type: 'cta',
         },
-        {
-          type: 'array',
-          name: 'rows',
-          of: [{ type: 'image' }],
-        },
       ],
+    },
+    {
+      type: 'array',
+      name: 'rows',
+      of: [{ type: 'image' }],
     },
   ],
   preview: {
