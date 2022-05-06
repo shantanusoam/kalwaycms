@@ -12,6 +12,11 @@ export default {
       name: 'label',
     },
     {
+      name: 'text',
+      type: 'simplePortableText',
+      title: 'Text',
+    },
+    {
       type: 'array',
       name: 'rows',
       of: [{ type: 'imageSection' }],
