@@ -13,7 +13,7 @@ import author from './author';
 import page from './documents/page';
 import route from './documents/route';
 // import siteConfig from './documents/siteConfig'
-
+import mainImage from './objects/mainImage';
 // Object types
 import cta from './objects/cta';
 import embedHTML from './objects/embedHTML';
@@ -35,7 +35,10 @@ import banner from './objects/banner';
 import imageRow from './objects/imageRow';
 import listeitems from './objects/listeitems';
 import footer from './documents/footer';
+import siteSettings from './documents/siteSettings';
+import siteConfig from './documents/siteConfig';
 import youtube from './objects/youtube';
+import openGraph from './objects/openGraph';
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -48,6 +51,8 @@ export default createSchema({
     post,
     author,
     category,
+    siteSettings,
+    mainImage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
@@ -71,7 +76,9 @@ export default createSchema({
     imageRow,
     banner,
     youtube,
+    openGraph,
     videoPlug,
     listeitems,
+    siteConfig,
   ]),
 });

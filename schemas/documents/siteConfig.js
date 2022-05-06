@@ -1,11 +1,9 @@
-import bcp47 from 'bcp47';
-
 export default {
   name: 'site-config',
   type: 'document',
   title: 'Site configuration',
   // https://www.sanity.io/docs/experimental/ui-affordances-for-actions
-  __experimental_actions: [/* "create", "delete", */ 'update', 'publish'],
+  // __experimental_actions: [/* "create", "delete", */ 'update', 'publish'],
   fieldsets: [{ name: 'footer', title: 'Footer' }],
   fields: [
     {
@@ -31,8 +29,8 @@ export default {
         'Should be a valid bcp47 language code like en, en-US, no or nb-NO',
       name: 'lang',
       type: 'string',
-      validation: Rule =>
-        Rule.custom(lang =>
+      validation: (Rule) =>
+        Rule.custom((lang) =>
           bcp47.parse(lang) ? true : 'Please use a valid bcp47 code'
         ),
     },
@@ -58,7 +56,7 @@ export default {
       title: 'Main navigation',
       name: 'mainNavigation',
       description: 'Select pages for the top menu',
-      validation: Rule => [
+      validation: (Rule) => [
         Rule.max(5).warning('Are you sure you want more than 5 items?'),
         Rule.unique().error('You have duplicate menu items'),
       ],
@@ -74,7 +72,7 @@ export default {
       title: 'Footer navigation items',
       name: 'footerNavigation',
       type: 'array',
-      validation: Rule => [
+      validation: (Rule) => [
         Rule.max(10).warning('Are you sure you want more than 10 items?'),
         Rule.unique().error('You have duplicate menu items'),
       ],
