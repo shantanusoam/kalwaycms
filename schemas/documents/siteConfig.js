@@ -26,6 +26,16 @@ export default {
       type: 'string',
       title: 'Phone number',
     },
+    {
+      name: 'Timing_1',
+      type: 'string',
+      title: 'Timing_1',
+    },
+    {
+      name: 'Timing_2',
+      type: 'string',
+      title: 'Timing_2',
+    },
     // {
     //   title: 'URL',
     //   name: 'url',
