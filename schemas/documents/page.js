@@ -38,6 +38,7 @@ export default {
         { type: 'banner' },
         { type: 'videoPlug' },
         { type: 'listeitems' },
+        { type: 'videoComponent' },
       ],
     },
     {

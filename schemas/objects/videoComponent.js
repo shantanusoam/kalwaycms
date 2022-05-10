@@ -1,8 +1,13 @@
 export default {
   type: 'object',
-  name: 'textSection',
-  title: 'Text',
+  name: 'videoComponent',
+  title: 'Youtube',
   fields: [
+    {
+      type: 'string',
+      name: 'Youtubeurl',
+      title: 'Youtubeurl',
+    },
     {
       name: 'label',
       type: 'string',

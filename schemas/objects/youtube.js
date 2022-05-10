@@ -35,10 +35,11 @@ export default {
       url: 'url',
     },
   },
+
   preview: {
     select: {
       url: 'url',
     },
-    component: YouTubePreview,
+    // component: YouTubePreview,
   },
 };
