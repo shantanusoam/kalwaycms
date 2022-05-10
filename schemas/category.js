@@ -8,10 +8,11 @@ export default {
       title: 'Title',
       type: 'string',
     },
+    //sun downn thhe hill
     {
       name: 'description',
       title: 'Description',
       type: 'text',
     },
   ],
-}
+};
