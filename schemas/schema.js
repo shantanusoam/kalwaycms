@@ -38,6 +38,9 @@ import footer from './documents/footer';
 import siteSettings from './documents/siteSettings';
 import siteConfig from './documents/siteConfig';
 import youtube from './objects/youtube';
+import Navbar from './documents/Navbar';
+import linkrow from './objects/Linkrow';
+import navLink from './objects/NavLink';
 import openGraph from './objects/openGraph';
 import videoComponent from './objects/videoComponent';
 // Then we give our schema to the builder and provide the result to Sanity
@@ -54,6 +57,9 @@ export default createSchema({
     category,
     siteSettings,
     mainImage,
+    navLink,
+    linkrow,
+    Navbar,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
