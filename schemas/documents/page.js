@@ -16,6 +16,10 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
+      description: 'Do not change the name of this field its dangerous ⚠️⚠️⚠️',
+      readOnly: ({ currentUser }) => {
+        return !currentUser.roles.find(({ name }) => name === 'administrator');
+      },
     },
 
     {

@@ -53,7 +53,7 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     page,
-    siteSettings,
+    // siteSettings,
     mainImage,
     navLink,
     linkrow,
