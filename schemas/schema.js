@@ -52,9 +52,7 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    post,
-    author,
-    category,
+    page,
     siteSettings,
     mainImage,
     navLink,
@@ -71,9 +69,9 @@ export default createSchema({
     internalLink,
     link,
     mailchimp,
-    page,
+
     portableText,
-    route,
+    // route,
     simplePortableText,
     footer,
     infoRows,
@@ -88,5 +86,8 @@ export default createSchema({
     videoPlug,
     listeitems,
     siteConfig,
+    post,
+    author,
+    category,
   ]),
 });

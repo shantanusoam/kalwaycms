@@ -19,14 +19,14 @@ export default {
       name: 'title',
       type: 'string',
     },
-    {
-      title: 'Internal link',
-      description: 'Use this to link between pages on the website',
-      name: 'route',
-      type: 'reference',
-      to: [{ type: 'route' }],
-      fieldset: 'link',
-    },
+    // {
+    //   title: 'Internal link',
+    //   description: 'Use this to link between pages on the website',
+    //   name: 'route',
+    //   type: 'reference',
+    //   to: [{ type: 'route' }],
+    //   fieldset: 'link',
+    // },
     {
       title: 'External link',
       name: 'link',
