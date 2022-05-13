@@ -8,6 +8,9 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
+      readOnly: ({ currentUser }) => {
+        return !currentUser.roles.find(({ name }) => name === 'administrator');
+      },
     },
     {
       title: 'Open graph',

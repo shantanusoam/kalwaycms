@@ -7,7 +7,11 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
+      readOnly: ({ currentUser }) => {
+        return !currentUser.roles.find(({ name }) => name === 'administrator');
+      },
     },
+
     {
       name: 'content',
       type: 'array',
