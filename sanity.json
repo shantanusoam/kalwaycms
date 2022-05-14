@@ -1,7 +1,9 @@
 {
   "root": true,
   "project": {
-    "name": "Kalwaycms"
+    "name": "Kalwaycms",
+
+    "basePath": "/backoffice"
   },
   "api": {
     "projectId": "cjv2tdo2",

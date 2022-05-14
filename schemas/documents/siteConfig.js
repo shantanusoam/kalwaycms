@@ -10,6 +10,9 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Site title',
+      readOnly: ({ currentUser }) => {
+        return !currentUser.roles.find(({ name }) => name === 'administrator');
+      },
     },
     {
       name: 'Email',
